@@ -68,6 +68,7 @@ export default function ComingSoonPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
+                    aria-label="instagram"
                 >
                   <Instagram className="w-5 h-5" />
                   <span className="hidden sm:inline">Instagram</span>
@@ -84,6 +85,7 @@ export default function ComingSoonPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
+                    aria-label="facebook"
                 >
                   <Facebook className="w-5 h-5" />
                   <span className="hidden sm:inline">Facebook</span>
@@ -100,6 +102,7 @@ export default function ComingSoonPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
+                    aria-label="tiktok"
                 >
                   <Music className="w-5 h-5" />
                   <span className="hidden sm:inline">TikTok</span>
@@ -109,7 +112,7 @@ export default function ComingSoonPage() {
           </div>
 
           {/* Footer */}
-          <div className="text-center text-gray-500 text-sm">
+          <div className="text-center text-gray-400 text-sm">
             <p>© 2024 TwelveTwelve Candle Co. All rights reserved.</p>
             <p className="mt-1">Handcrafted with love, coming to you soon.</p>
           </div>
