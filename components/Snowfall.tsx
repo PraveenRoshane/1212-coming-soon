@@ -1,5 +1,3 @@
-// components/Snowfall.tsx
-
 'use client';
 
 import React, {JSX, useEffect, useState} from 'react';
@@ -23,7 +21,7 @@ const Snowfall: React.FC = () => {
                 flakeArray.push(
                     <div
                         key={i}
-                        className={`absolute top-[-5vh] rounded-full bg-white ${
+                        className={`absolute top-[-5vh] rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 ${
                             isBlurred ? 'blur-sm' : ''
                         }`}
                         style={{
@@ -46,7 +44,7 @@ const Snowfall: React.FC = () => {
     }, []);
 
     return (
-        <div className="relative w-screen h-screen overflow-hidden bg-gradient-to-b from-[#123] to-[#111]">
+        <div>
             {flakes}
             <style jsx>{`
             @keyframes snowfall {
