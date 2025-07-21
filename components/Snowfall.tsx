@@ -21,7 +21,7 @@ const Snowfall: React.FC = () => {
                 flakeArray.push(
                     <div
                         key={i}
-                        className={`absolute top-[-5vh] rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 ${
+                        className={`absolute top-[-5vh] rounded-full bg-gradient-to-br from-[#b58e55] to-[#7b4806] ${
                             isBlurred ? 'blur-sm' : ''
                         }`}
                         style={{
