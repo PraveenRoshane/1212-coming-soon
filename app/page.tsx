@@ -14,7 +14,7 @@ export default function ComingSoonPage() {
             </div>
 
             {/* Foreground content */}
-            <div className="min-h-screen overflow-hidden relative z-10 container mx-auto px-5 flex flex-col items-center justify-center text-center">
+            <div className="min-h-screen overflow-hidden relative z-10 container mx-auto px-5 -mt-10 flex flex-col items-center justify-center text-center">
                 {/* Logo */}
                 <div className="mb-5">
                     <div className="mx-auto flex items-center justify-center shadow-2xl">
