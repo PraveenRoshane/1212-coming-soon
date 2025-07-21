@@ -14,16 +14,16 @@ export default function ComingSoonPage() {
             </div>
 
             {/* Foreground content */}
-            <div className="min-h-screen overflow-hidden relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 flex flex-col items-center justify-center text-center">
+            <div className="min-h-screen overflow-hidden relative z-10 container mx-auto px-5 flex flex-col items-center justify-center text-center">
                 {/* Logo */}
-                <div className="mb-8">
+                <div className="mb-5">
                     <div className="mx-auto flex items-center justify-center shadow-2xl">
                         <Image src="/logo-full.svg" alt="Logo" width={800} height={800}/>
                     </div>
                 </div>
 
                 {/* Coming-Soon message */}
-                <div className="mb-5 max-w-2xl px-4">
+                <div className="mb-5 max-w-2xl">
                     <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gold mb-4 font-playfair">
                         A fresh new look is coming.
                     </h3>
@@ -54,7 +54,7 @@ export default function ComingSoonPage() {
                 </Card>
 
                 {/* Social links */}
-                <div className="mb-8">
+                <div>
                     <h4 className="text-lg font-semibold text-gold mb-4">Follow Our Journey</h4>
                     <div className="flex gap-4 justify-center">
                         {[
