@@ -8,6 +8,20 @@ import Snowfall from "@/components/Snowfall";
 export default function ComingSoonPage() {
     return (
         <div className="min-h-screen bg-black relative overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/background.png"
+                    alt="Background"
+                    fill
+                    className="object-center object-cover"
+                    priority
+                    sizes="100vw"
+                />
+                {/* Dark overlay for better text readability */}
+                <div className="absolute inset-0 bg-black/75"></div>
+            </div>
+
             {/* Snowfall background */}
             <div className="absolute inset-0 z-0">
                 <Snowfall/>
@@ -17,7 +31,7 @@ export default function ComingSoonPage() {
             <div className="min-h-screen overflow-hidden relative z-10 container mx-auto px-5 flex flex-col items-center justify-center text-center">
                 {/* Logo */}
                 <div className="mb-5">
-                    <div className="mx-auto flex items-center justify-center shadow-2xl">
+                    <div className="mx-auto flex items-center justify-center">
                         <Image src="/logo-full.svg" alt="Logo" width={800} height={800}/>
                     </div>
                 </div>
