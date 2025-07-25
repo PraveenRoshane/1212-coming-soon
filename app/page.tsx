@@ -1,9 +1,8 @@
 import {Button} from "@/components/ui/button";
-import {Input} from "@/components/ui/input";
-import {Card, CardContent} from "@/components/ui/card";
 import {Instagram, Facebook, Music} from "lucide-react";
 import Image from "next/image";
 import Snowfall from "@/components/Snowfall";
+import Newsletter from "@/components/Newsletter";
 
 export default function ComingSoonPage() {
     return (
@@ -16,6 +15,7 @@ export default function ComingSoonPage() {
                     fill
                     className="object-center object-cover"
                     priority
+                    fetchPriority="high"
                     sizes="100vw"
                 />
                 {/* Dark overlay for better text readability */}
@@ -32,7 +32,7 @@ export default function ComingSoonPage() {
                 {/* Logo */}
                 <div className="mb-5">
                     <div className="mx-auto flex items-center justify-center">
-                        <Image src="/logo-full.svg" alt="Logo" width={800} height={800}/>
+                        <Image src="/logo-full.svg" alt="Logo" width={800} height={800} priority fetchPriority="high"/>
                     </div>
                 </div>
 
@@ -47,24 +47,7 @@ export default function ComingSoonPage() {
                 </div>
 
                 {/* Newsletter signup */}
-                <Card className="w-full max-w-md mb-5 bg-neutral-900/80 backdrop-blur-sm border-gold">
-                    <CardContent>
-                        <h4 className="text-xl font-semibold text-gold mb-3 font-sans">Be the First to Know</h4>
-                        <p className="text-gold-light mb-4 font-sans">
-                            Because beauty this intentional deserves to be shared first—with you.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-2">
-                            <Input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="flex-1 bg-black border-gold text-white placeholder:text-gold-light focus:border-yellow-400"
-                            />
-                            <Button className="bg-gold text-black hover:bg-gold-light font-medium">
-                                Notify Me
-                            </Button>
-                        </div>
-                    </CardContent>
-                </Card>
+                <Newsletter />
 
                 {/* Social links */}
                 <div>

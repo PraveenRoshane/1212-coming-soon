@@ -24,9 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${playfairDisplay.variable} ${openSans.variable} antialiased`}
-      >
+      <body className={`${playfairDisplay.variable} ${openSans.variable} antialiased`}>
           {children}
       </body>
     </html>
