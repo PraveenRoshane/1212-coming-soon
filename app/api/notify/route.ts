@@ -6,15 +6,14 @@ export async function POST(req: Request) {
     if (!email?.includes('@'))
         return new Response('Invalid email', { status: 400 });
 
-    const file = path.join(process.cwd(), 'emails.txt');
+    const file = path.join('/tmp', 'emails.txt');   // <— use /tmp
 
-    // make sure the file exists before we append
     try {
-        await fs.access(file);          // throws if file is missing
+        await fs.access(file);
     } catch {
-        await fs.writeFile(file, '');   // create empty file once
+        await fs.writeFile(file, '');
     }
 
     await fs.appendFile(file, email + '\n');
-    return new Response(JSON.stringify({ ok: true }));
+    return Response.json({ ok: true });
 }
